@@ -1,0 +1,25 @@
+@GameApi_HostAddress = http://localhost:5142
+
+### Get all games
+GET {{GameApi_HostAddress}}/api/games
+Accept: application/json
+
+###
+
+### Get one game by id
+GET {{GameApi_HostAddress}}/api/games/1
+Accept: application/json
+
+###
+
+### Create a game
+POST {{GameApi_HostAddress}}/api/games
+Content-Type: application/json
+
+{
+  "name": "Portal 2",
+  "genre": "Puzzle",
+  "price": 19.99
+}
+
+###
